@@ -1,0 +1,110 @@
+<html>
+<head>
+  <meta  charset="UTF-8">	<meta  name="viewport"  content="width=device-width, initial-scale=1.0">
+  <style>
+    div.absolute {
+      position: absolute;
+      top: 80px;
+      right: 0;
+      width: 200px;
+      height: 100px;
+      border: 3px solid #73AD21;
+    }
+  </style>
+
+  <style type="text/css">
+
+    .center {
+      display: flex;
+
+      justify-content: center;
+
+      align-items: center;
+
+
+    }
+        
+    button {
+      width: 100%;
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+    div.ctest{
+      border-radius: 5px;
+      background-color: #f2faf4;
+      padding: 20px;
+      
+    }
+    
+  </style>
+  <style>
+    div.sticky {
+  /* Safari */
+  position: sticky;
+  top: 0;
+  background-color: green;
+  border: 2px solid #4CAF50;
+}
+
+  </style>
+  <title>
+    Bidding and Contract Award: payment
+  </title>
+</head>
+<body style="background-color: #f2f7f5">
+  <div class="sticky">
+  <h1 style="text-align:center;color:green">University of Uyo</h1>
+  </div>
+  <div class="ctest">
+    <p>
+      Welcome to Uniuyo bidding and contract award system. Bidders must pay 10,000 naira in order to fill the form. Click the button below to proceed <br />
+    </p>
+    <div class="center">
+      <iframe onload="iAlert();" height="600px" width="350px" title="card payment" style="border:none" id="showform" src=""></iframe>
+    </div>
+
+    <button visibility="visible" id="p1" onclick="showForm();">Proceed to make payment</button>
+
+
+  <script type="text/javascript">
+    //varriableas
+    loadListener = 0;
+
+    //show form function
+    function showForm() {
+      document.getElementById("showform").src = "card.html";
+      show();
+      hidep1();
+    }
+    //hide and show form
+    function show() {
+      document.getElementById("showform").style.display = "block";
+    }
+
+    function hide() {
+      document.getElementById("showform").style.display = "none";
+    }
+    function hidep1() {
+      document.getElementById ("p1").style.visibility="hidden";
+    }
+    hide();
+    function iAlert() {
+      loadListener += 1;
+      if (loadListener == 2) {
+        hide();
+        window.location.replace("form.html");
+      }
+    }
+
+  </script>
+</body>
+</html>
