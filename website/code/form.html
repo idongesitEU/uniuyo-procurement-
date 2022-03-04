@@ -1,0 +1,107 @@
+<html>
+<head>
+  <style>
+  input[type=email], select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+  input[type=text], select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    input[type=number], select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    input[type=password], select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    input[type=month], select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    input[type=submit] {
+      width: 100%;
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+    div.formholder{
+      border-radius: 5px;
+      background-color: #f2faf4;
+      padding: 20px;
+      color:green;
+    }
+  </style>
+  <title>
+    Bidding and contract award form
+  </title>
+</head>
+
+<!--body-->
+
+<body style="background-color:#f2f7f5">
+  <div class="formholder">
+    <form method="post" action="fetch.txt">
+<label for="fname"> First Name:</label>
+   <input placeholder="Enter your first name" type="text" id="fname" />
+
+<label for="oname"> Other Names:</label>
+   <input placeholder="Enter your other names" type="text" id="oname" />
+
+<label for="email"> E-mail:</label>
+   <input placeholder="Enter your e-mail address" type="email" id="email" />
+
+<label for="address">Address:</label>
+   <input placeholder="Enter your home address" type="text" id="address" />
+
+
+
+<label for="phone"> Phone Number: </label>
+   <input placeholder="Enter your phone number" type="number" id="phone" />
+   <br/><br/>
+   <label for="brief">Briefly tell us why you think you are qualified for this contract</label>
+   <input placeholder="Your response" type="text" id="brief" />
+
+     <input type="file" id="myFile" name="filename">
+  <input type="submit">
+<input type="submit" />
+    </form>
+  </div>
+
+</body>
+</html>
